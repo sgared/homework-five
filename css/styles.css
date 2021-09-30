@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+}
+nav {
+  position: fixed;
+  width: 980px;
+  height: 93px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 93px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: solid 2px black;
+}
+nav .logo {
+  width: 136px;
+  height: 42px;
+  color: black;
+  background-image: url(../images/logo-black.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+nav .links {
+  height: 42px;
+  width: 430px;
+}
+nav .links Ul {
+  display: inline;
+}
+nav .links Ul li {
+  display: inline;
+}
+nav .links Ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: Gill Sans;
+  font-size: 15px;
+  padding: 10px 10px 0 10px;
+}
+nav .links Ul li a span {
+  margin-left: 10px;
+}
+
+.filler {
+  width: 980px;
+  height: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 93px;
+}
+
+@media only screen and (max-width: 700px) {
+  nav {
+    position: relative;
+    width: 600px;
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: none;
+  }
+  nav .logo {
+    margin: 15px auto;
+    width: 500px;
+  }
+  nav .links {
+    border: solid 1px green;
+    text-align: center;
+    margin: 15px;
+  }
+  nav .links span {
+    display: none;
+  }
+  nav .links a {
+    display: block;
+    margin: 8px auto;
+  }
+}
+@font-face {
+  font-family: GillSans;
+  src: url(../css/fonts/GillSans.ttc);
+}
+@font-face {
+  font-family: ProximaNovaSc0fExtraCondensed;
+  src: url(../css/fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+.title_h1 {
+  margin: 0 896px 2px 150px;
+  font-size: 60px;
+  font-family: ProximaNovaScOsfExtraCondensed;
+}
+
+.underline-about {
+  width: 171px;
+  color: black;
+  height: 2px;
+  margin: 0 896px 2px 150px;
+}
+
+.title_h2 {
+  font-size: 40px;
+  margin: 0 785px 0 150px;
+  font-family: ProximaNovaScOsfExtraCondensed;
+}
+
+.underline-quotes {
+  width: 255px;
+  color: black;
+  height: 2px;
+  margin: 0 785px 0 150px;
+}
+
+.intro_p {
+  margin: 36px 149px 95px 151px;
+  font-size: 16px;
+  font-family: GillSans;
+  font-weight: bold;
+}
+
+.about-person {
+  position: relative;
+  width: 722px;
+  min-height: 150px;
+  margin: 40px 408px 40px 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-person .person-picture {
+  width: 260px;
+  height: 150px;
+  margin-right: 21px;
+}
+.about-person .one {
+  background-image: url(../images/about-client-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-person .two {
+  background-image: url(../images/about-client-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-person .quote {
+  width: 385px;
+  height: 102px;
+}
+.about-person .quote p {
+  font-size: 16px;
+  font-family: GillSans;
+  font-weight: bold;
+}
+.about-person .author {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 176px;
+  height: 27px;
+  font-family: ProximaNovaScOsfExtraCondensed;
+  font-style: thin;
+  font-size: 20px;
+  color: #79addc;
+}
+
+@media only screen and (max-width: 700px) {
+  .about-person {
+    display: block;
+    position: relative;
+    margin: 10px 10px;
+  }
+  .about-person .person-picture {
+    margin-bottom: 15px;
+  }
+  .about-person .quote {
+    margin-bottom: 15px;
+  }
+  .about-person .author {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .title_h1 {
+    margin: 15px 2px;
+    border: none;
+  }
+
+  .title_h2 {
+    margin: 15px 2px;
+    border: none;
+  }
+
+  .intro_p {
+    margin: 15px 5px;
+  }
+}
+footer {
+  width: 100%;
+  min-height: 100px;
+  background-color: #79addc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 150px;
+}
+footer .footer-logo {
+  width: 75px;
+  height: 60px;
+  color: white;
+  background-image: url(../images/logo-white.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+footer .copyright {
+  color: white;
+  font-family: Gill-Sans;
+  font-size: 12px;
+}
+footer .social-medias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .social-medias .facebook {
+  width: 22.96px;
+  height: 22.96px;
+  background-color: green;
+  margin-right: 21px;
+}
+footer .social-medias .instagram {
+  width: 22.96px;
+  height: 22.96px;
+  background-color: yellow;
+  margin-right: 21px;
+}
+footer .social-medias .twitter {
+  width: 22.96px;
+  height: 22.96px;
+  background-color: red;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    display: block;
+    margin: 10px 3px;
+  }
+  footer .footer-logo {
+    margin-bottom: 15px;
+  }
+  footer .copyright {
+    margin-bottom: 15px;
+  }
+  footer .social-medias {
+    display: block;
+  }
+  footer .social-medias .facebook {
+    margin-bottom: 15px;
+  }
+  footer .social-medias .instagram {
+    margin-bottom: 15px;
+  }
+  footer .social-medias .twitter {
+    margin-bottom: 15px;
+  }
+}
